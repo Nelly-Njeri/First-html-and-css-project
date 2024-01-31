@@ -1,0 +1,129 @@
+body {
+    background-image: repeating-linear-gradient(-45deg, #a0d0af, #a0d0af 10px, #c7e2ef 10px, #c7e2ef 20px); /* Subtle diagonal pattern */
+    font-family: sans-serif;
+    color: #7ca2b3; /* Lighter teal for text */
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #689ab7;
+    animation: pulse 2s ease-in-out infinite; /* Subtle pulse animation */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-family: Merriweather Bold, sans-serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Soft inner shadow */
+  }
+  
+  section h2 {
+    font-family: Merriweather Bold, sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  section p {
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  
+  .story {
+    background-color: #b5e4f5; /* Pastel blue for story section */
+  }
+  
+  .values {
+    background-color: #e2f1f8; /* Lighter blue for values section */
+  }
+  
+  .values p {
+    width: 45%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .values p:hover {
+    opacity: 0.9; /* Subtle hover effect */
+  }
+  
+  .values p:nth-child(1) {
+    background-color: #f6d0e1; /* Pink for 'caring' */
+  }
+  
+  .values p:nth-child(2) {
+    background-color: #c8b2e2; /* Purple for 'kind' */
+  }
+  
+  .future {
+    background: linear-gradient(to right, #f7931b, #689ab7); /* Diagonal gradient */
+  }
+  
+  img {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  img + p { /* Caption for images */
+    font-size: 14px;
+    color: #c8b2e2;
+    margin-top: 5px;
+  }
+  
+  footer {
+    background-color: #689ab7;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Animations */
+  @keyframes pulse {
+    0% {
+      background-color: #689ab7;
+    }
+    50% {
+      background-color: #7ca2b3;
+    }
+    100% {
+      background-color: #689ab7;
+    }
+  }
+  
+  /* Transitions */
+  section {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Media queries for responsiveness (adjust as needed) */
+  @media (max-width: 768px) {
+    /* Styles for smaller screens */
+  }
+  
